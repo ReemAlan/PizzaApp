@@ -1,8 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Spectre.Console;
-using System.IO;
-using System.Text.Json;
-using System.Text.Json.Nodes;
 
 namespace PizzaApp
 {
@@ -31,7 +28,9 @@ namespace PizzaApp
             if (AnsiConsole.Confirm("Place this order?")) 
             {
                 order.WriteToDatabase();
+                order.GetOrderPrice();
             }
+            AnsiConsole.Markup("[blue]Thank you for visiting our store![/]");
         }
     }
 }

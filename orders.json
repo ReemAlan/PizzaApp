@@ -1,4 +1,66 @@
 [
-  {},
-  {}
+  {
+    "size": "small",
+    "dough": "pan",
+    "topping": [
+      "mushroom",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "white sauce",
+    "price": 38
+  },
+  {
+    "size": "medium",
+    "dough": "thin",
+    "topping": [
+      "veal",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "white sauce",
+    "price": 63
+  },
+  {
+    "size": "large",
+    "dough": "thin - stuffed crust",
+    "topping": [
+      "veal",
+      "chilli pepper",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "tomato sauce",
+    "price": 78
+  },
+  {
+    "size": "large",
+    "dough": "regular",
+    "topping": [
+      "mushroom",
+      "veal",
+      "chilli pepper",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "tomato sauce",
+    "price": 88
+  },
+  {
+    "size": "medium",
+    "dough": "thin",
+    "topping": [
+      "shrimp",
+      "chilli pepper",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "tomato sauce",
+    "price": 63
+  }
 ]

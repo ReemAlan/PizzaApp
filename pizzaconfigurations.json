@@ -2,8 +2,8 @@
     "size":
     {   
         "small": 1,
-        "medium": 2,
-        "large": 3
+        "medium": 1.5,
+        "large": 2
     },
     "dough":
     {

@@ -5,11 +5,12 @@ namespace PizzaApp
 {
     public static class Menu 
     {
-        public static List<string> Sizes = new List<string>();
-        public static List<string> Dough = new List<string>();
-        public static List<string> Toppings = new List<string>();
-        public static List<string> Sauces = new List<string>();
-        public static void DisplayMenu() {
+        public static IDictionary<string, double> Sizes { get; set; } = new Dictionary<string, double>();
+        public static IDictionary<string, double> Dough { get; set; } = new Dictionary<string, double>();
+        public static IDictionary<string, double> Toppings { get; set; } = new Dictionary<string, double>();
+        public static IDictionary<string, double> Sauces { get; set; } = new Dictionary<string, double>();
+        public static void DisplayMenu() 
+        {
            using (var jsonFileReader = File.OpenText("pizzaconfigurations.json"))
             {
                 string file = jsonFileReader.ReadToEnd();
@@ -24,7 +25,7 @@ namespace PizzaApp
                         foreach (var pair in prop.Value.AsObject()) 
                         {
                             table.AddRow(pair.Key, $"{pair.Value}");
-                            Sizes.Add(pair.Key);
+                            Sizes.Add(pair.Key, (double)pair.Value);
                         }
                     } 
                     else 
@@ -34,9 +35,9 @@ namespace PizzaApp
                         {
                             table.AddRow(pair.Key, $"{pair.Value}");
                             switch (prop.Key) {
-                                case "dough": Dough.Add(pair.Key); break;
-                                case "topping": Toppings.Add(pair.Key); break;
-                                case "base": Sauces.Add(pair.Key); break;
+                                case "dough": Dough.Add(pair.Key, (double)pair.Value); break;
+                                case "topping": Toppings.Add(pair.Key, (double)pair.Value); break;
+                                case "base": Sauces.Add(pair.Key, (double)pair.Value); break;
                             }
                         }
                     }
