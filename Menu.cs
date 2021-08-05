@@ -9,6 +9,7 @@ namespace PizzaApp
         public static IDictionary<string, double> Dough { get; set; } = new Dictionary<string, double>();
         public static IDictionary<string, double> Toppings { get; set; } = new Dictionary<string, double>();
         public static IDictionary<string, double> Sauces { get; set; } = new Dictionary<string, double>();
+        
         public static void DisplayMenu() 
         {
            using (var jsonFileReader = File.OpenText("pizzaconfigurations.json"))

@@ -6,6 +6,7 @@ namespace PizzaApp
     public class Order 
     {
         public List<Pizza> Pizzas { get; } = new List<Pizza>();
+        
         public void PlaceOrder() 
         {
             var size = AnsiConsole.Prompt(
@@ -52,6 +53,7 @@ namespace PizzaApp
             }
             AnsiConsole.Markup($"Total price: [green]{total}[/]\n\n");
         }
+
         public double CalculatePrice(Pizza pizza) 
         {
             double sum = 0;
@@ -63,6 +65,7 @@ namespace PizzaApp
             sum += Menu.Sizes[pizza.Size] * Menu.Dough[pizza.Dough] + Menu.Sauces[pizza.BaseSauce];
             return sum;
         }
+
         public IEnumerable<Pizza> GetOrders()
         {
             using (var jsonFileReader = File.OpenText("orders.json"))

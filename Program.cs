@@ -30,6 +30,7 @@ namespace PizzaApp
                 order.WriteToDatabase();
                 order.GetOrderPrice();
             }
+            
             AnsiConsole.Markup("[blue]Thank you for visiting our store![/]");
         }
     }
