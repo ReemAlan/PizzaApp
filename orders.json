@@ -62,5 +62,30 @@
     ],
     "base": "tomato sauce",
     "price": 63
+  },
+  {
+    "size": "medium",
+    "dough": "thin",
+    "topping": [
+      "pepperoni",
+      "mushroom",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "white sauce",
+    "price": 53
+  },
+  {
+    "size": "large",
+    "dough": "regular",
+    "topping": [
+      "seafood",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "tomato sauce",
+    "price": 78
   }
 ]
