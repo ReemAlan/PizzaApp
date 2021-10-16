@@ -87,5 +87,27 @@
     ],
     "base": "tomato sauce",
     "price": 78
+  },
+  {
+    "size": "small",
+    "dough": "pan",
+    "topping": [
+      "pepperoni",
+      "tomato",
+      "olives",
+      "onion",
+      "mozarella cheese"
+    ],
+    "base": "tomato sauce",
+    "price": 33
+  },
+  {
+    "size": "large",
+    "dough": "pan - stuffed crust",
+    "topping": [
+      "pepperoni"
+    ],
+    "base": "white sauce",
+    "price": 35
   }
 ]

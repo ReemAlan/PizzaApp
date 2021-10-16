@@ -91,7 +91,7 @@ namespace PizzaApp
             var pizzas = GetOrders();
             if (pizzas == null) 
             {
-                 pizzas = this.Pizzas.ToArray();
+                pizzas = this.Pizzas.ToArray();
             }
             else
             {
